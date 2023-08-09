@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+/* contains both ubuntu and Poppimns*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: var(--clr--black);
+}
+
+body {
+    background-color: var(--clr--white);
+}
+
+@media (min-width: 786px) {
+    body {
+        overflow: auto !important;
+    }
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+:root {
+    --ubuntu: "Ubuntu", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    --ft--s: 0.75rem;
+    --ft--m: 1rem;
+    --ft--lg: 1.5rem;
+    --ft--xl: 2rem;
+    --ft--xxl: 4rem;
+    --radius: 1.68rem;
+    --clr--white: #fcfdfc;
+    --clr--black: #141115;
+    --clr--blue: #4483f3;
+    --clr--red: #eb4434;
+    --clr--yellow: #fbbb04;
+    --clr--green: #0c9c5b;
+    --bg--landing: #f2f7f2;
+    --bg--card: #ffffff;
+    --shadow: #13101480;
+    --shadow--card: -3px 1px 2px -13px rgb(196 196 196 / 48%), 1px 0px 14px rgb(20 17 21 / 50%);
+    --shadow--header: 0px 6px 13px rgba(0, 0, 0, 0.25);
+    --gradient--footer: linear-gradient(90.02deg, #fdfbfb 0.02%, #ebedee 99.98%);
+}
+
+main {
+    position: relative;
+}
+
+nav {
+    display: flex;
+    height: 8vh;
+    min-height: 50px;
+    padding: 0 4%;
+    background: #ffffff;
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    /* align-items: center;
+    justify-content: space-between; */
+}
+
+section {
+    margin: 5em 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90.02deg, #fdfbfb 0.02%, #ebedee 99.98%);
+    align-items: center;
+    padding: 0.25em 4%;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 1em;
+    background: var(--clr--green);
+    border-radius: var(--radius);
+    color: var(--clr--white);
+    font-family: var(--poppins);
+    font-size: clamp(var(--ft--m), 3vw, var(--ft--lg));
+    margin-top: 0.5em;
+    transition: all 300ms ease;
+}
+
+a {
+    display: flex;
+    width: fit-content;
+}
+
+button:hover,
+button:focus {
+    transform: scale(1.075);
+    box-shadow: 2px 4px 0.35em -0.045em var(--shadow);
+    cursor: pointer;
+}
+
+input {
+    background: none;
+    border: 0;
+    color: var(--clr--white);
+    border-bottom: 2px solid var(--clr--white);
+}
+
+textarea {
+    background: none;
+    border: 1px solid var(--clr--white);
+    color: var(--clr--white);
+    resize: none;
+}
+
+textarea::placeholder {
+    color: var(--bg--landing);
+}
+
+input::placeholder {
+    color: var(--bg--landing);
+}
+
+textarea,
+input {
+    outline: none;
+}
+
+textarea::selection,
+input::selection {
+    background-color: var(--clr--white);
+    color: var(--clr--black);
+}
+
+h1 {
+    font-size: clamp(var(--ft--xl), 5vw, var(--ft--xxl));
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: clamp(var(--ft--lg), 5vw, var(--ft--xl));
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: var(--clr--black);
+    text-decoration: none;
+}
+
+.subtitle {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+}
